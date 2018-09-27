@@ -14,6 +14,9 @@ fi
 if [ -d ~/vim ]; then
     mv -f ~/vim ~/vim_old
 fi
+if [ -d /tmp/vim_theme ]; then
+    rm -rf /tmp/vim_theme;
+fi
 cd /tmp/ && git clone https://github.com/mesopodamia/vim_theme.git
 if [ -f ~/.vimrc ]; then
     mv -f ~/.vimrc ~/.vimrc_old
