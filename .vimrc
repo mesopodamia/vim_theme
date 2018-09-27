@@ -1,15 +1,15 @@
 syntax on
-autocmd FileType python set omnifunc=pythoncomplete#Complete  
-autocmd FileType php set omnifunc=phpcomplete#Complete  
-autocmd FileType sql set omnifunc=sqlcomplete#Complete  
+set nu!
+set relativenumber
+set ruler
+set showcmd
+set cursorline
 set autoindent
 set smartindent
 set tabstop=4
 set shiftwidth=4
-set softtabstop=4
 set expandtab
 set smarttab
-set relativenumber
 set textwidth=0
 set wrapmargin=2
 set showmatch
@@ -19,3 +19,6 @@ set incsearch
 set hlsearch
 set paste
 set history=1000
+set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ %{strftime(\"%d/%m/%y\ -\ %H:%M\")}
+
+
