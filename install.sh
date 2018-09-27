@@ -20,7 +20,7 @@ fi
 cd /tmp/ && git clone https://github.com/mesopodamia/vim_theme.git
 if [ -f ~/.vimrc ]; then
     mv -f ~/.vimrc ~/.vimrc_old
-    mv -f /tmp/vim_theme/.vimrc ~/
+    mv -f /tmp/vim_theme/vimrc ~/
 fi
 echo "安装完毕将自动退出" >> /tmp/vim_install.log
 echo "请耐心等待" >> /tmp/vim_install.log
