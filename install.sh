@@ -14,7 +14,7 @@ fi
 
 mv -f ~/vim ~/vim_old
 cd /tmp/ && git clone https://github.com/mesopodamia/vim_theme.git
-mv -f /tmp/vim_theme/.vimrc ~/.vimrc_old
+mv -f ~/.vimrc ~/.vimrc_old
 mv -f /tmp/vim_theme/.vimrc ~/
 echo "安装完毕将自动退出" >> /tmp/vim_install.log
 echo "请耐心等待" >> /tmp/vim_install.log
