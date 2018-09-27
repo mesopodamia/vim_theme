@@ -11,11 +11,14 @@ if which brew >/dev/null;then
     echo "You are using HomeBrew tool"
     brew install vim git
 fi
-
-mv -f ~/vim ~/vim_old
+if [ -d ~/vim ]; then
+    mv -f ~/vim ~/vim_old
+fi
 cd /tmp/ && git clone https://github.com/mesopodamia/vim_theme.git
-mv -f ~/.vimrc ~/.vimrc_old
-mv -f /tmp/vim_theme/.vimrc ~/
+if [ -f ~/.vimrc ]; then
+    mv -f ~/.vimrc ~/.vimrc_old
+    mv -f /tmp/vim_theme/.vimrc ~/
+fi
 echo "安装完毕将自动退出" >> /tmp/vim_install.log
 echo "请耐心等待" >> /tmp/vim_install.log
 echo "安装完成"
